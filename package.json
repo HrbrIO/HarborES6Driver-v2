@@ -1,0 +1,40 @@
+{
+  "name": "hrbr-es6-driver-concurrent",
+  "version": "1.0.0",
+  "description": "Hrbr.io ES6 Beacon Driver with Concurrency",
+  "main": "index.js",
+  "homepage": "https://www.hrbr.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HrbrIO/es6driver2"
+  },
+  "scripts": {
+    "test": "mocha tests/bootstrap.test.js tests/**/*.test.js",
+    "testy": "mocha --reporter nyan tests/bootstrap.test.js tests/**/*.test.js",
+    "flood": "node tests/performance/beaconflood.js"
+  },
+  "author": {
+    "name": "Mitch Kahn",
+    "url": "http://www.hrbr.io"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "colors": "^1.3.0",
+    "http-server": "^0.10.0",
+    "minimist": "*",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "supertest": "^3.1.0",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "lodash": "^4.17.4",
+    "sizeof": "^1.0.0",
+    "superagent": "^3.8.3",
+    "superagent-throttle": "^1.0.1",
+    "uuid": "^3.2.1",
+    "webpack": "^4.16.5"
+  }
+}
